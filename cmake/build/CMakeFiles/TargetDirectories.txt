@@ -1,0 +1,3 @@
+C:/Users/blake/Desktop/C++ Projects/Better Logger/cmake/build/CMakeFiles/Tester.dir
+C:/Users/blake/Desktop/C++ Projects/Better Logger/cmake/build/CMakeFiles/edit_cache.dir
+C:/Users/blake/Desktop/C++ Projects/Better Logger/cmake/build/CMakeFiles/rebuild_cache.dir

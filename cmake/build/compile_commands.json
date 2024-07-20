@@ -1,0 +1,14 @@
+[
+{
+  "directory": "C:/Users/blake/Desktop/C++ Projects/Better Logger/cmake/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Tester.dir/includes_CXX.rsp -g -std=gnu++23 -Winvalid-pch -x c++-header -include \"C:/Users/blake/Desktop/C++ Projects/Better Logger/cmake/build/CMakeFiles/Tester.dir/cmake_pch.hxx\" -o CMakeFiles\\Tester.dir\\cmake_pch.hxx.gch -c \"C:\\Users\\blake\\Desktop\\C++ Projects\\Better Logger\\cmake\\build\\CMakeFiles\\Tester.dir\\cmake_pch.hxx.cxx\"",
+  "file": "C:/Users/blake/Desktop/C++ Projects/Better Logger/cmake/build/CMakeFiles/Tester.dir/cmake_pch.hxx.cxx",
+  "output": "CMakeFiles/Tester.dir/cmake_pch.hxx.gch"
+},
+{
+  "directory": "C:/Users/blake/Desktop/C++ Projects/Better Logger/cmake/build",
+  "command": "C:\\msys64\\ucrt64\\bin\\g++.exe  @CMakeFiles/Tester.dir/includes_CXX.rsp -g -std=gnu++23 -Winvalid-pch -include \"C:/Users/blake/Desktop/C++ Projects/Better Logger/cmake/build/CMakeFiles/Tester.dir/cmake_pch.hxx\" -o CMakeFiles\\Tester.dir\\C_\\Users\\blake\\Desktop\\C++_Projects\\Better_Logger\\tester\\tester.cpp.obj -c \"C:\\Users\\blake\\Desktop\\C++ Projects\\Better Logger\\tester\\tester.cpp\"",
+  "file": "C:/Users/blake/Desktop/C++ Projects/Better Logger/tester/tester.cpp",
+  "output": "CMakeFiles/Tester.dir/C_/Users/blake/Desktop/C++_Projects/Better_Logger/tester/tester.cpp.obj"
+}
+]
