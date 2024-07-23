@@ -9,8 +9,8 @@ public:
 
 
 int main(){
-    system("cls");
 
+    system("cls");
 
     better::Logger::get<better::Main>().log("default log from default logger");
     better::Logger::get<better::Debug>().log("default log from default logger");
