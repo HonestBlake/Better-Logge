@@ -2,5 +2,5 @@
 
 #pragma GCC system_header
 #ifdef __cplusplus
-#include "C:/Users/blake/Desktop/C++ Projects/Better Logger/cmake/../lib_include/better/logger.hpp"
+#include "C:/Users/blake/Desktop/C++ Projects/Better Logger/cmake/../header/includes.hpp"
 #endif // __cplusplus

@@ -1,10 +1,7 @@
 CMakeFiles/Tester.dir/cmake_pch.hxx.gch: \
  C:\Users\blake\Desktop\C++\ Projects\Better\ Logger\cmake\build\CMakeFiles\Tester.dir\cmake_pch.hxx.cxx \
  C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/cmake/build/CMakeFiles/Tester.dir/cmake_pch.hxx \
- C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/lib_include/better/logger.hpp \
- C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/include/loggers.hpp \
- C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/include/betterLogger/namespaces.hpp \
- C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/include/betterLogger/includes.hpp \
+ C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/includes.hpp \
  C:/msys64/ucrt64/include/c++/13.2.0/string \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/requires_hosted.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/c++config.h \
@@ -107,14 +104,7 @@ CMakeFiles/Tester.dir/cmake_pch.hxx.gch: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/uses_allocator_args.h \
  C:/msys64/ucrt64/include/c++/13.2.0/tuple \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/ranges_util.h \
- C:/msys64/ucrt64/include/c++/13.2.0/optional \
- C:/msys64/ucrt64/include/c++/13.2.0/exception \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/exception_ptr.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/cxxabi_init_exception.h \
- C:/msys64/ucrt64/include/c++/13.2.0/typeinfo \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/nested_exception.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/enable_special_members.h \
- C:/msys64/ucrt64/include/c++/13.2.0/mutex \
+ C:/msys64/ucrt64/include/c++/13.2.0/chrono \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/chrono.h \
  C:/msys64/ucrt64/include/c++/13.2.0/ratio \
  C:/msys64/ucrt64/include/c++/13.2.0/cstdint \
@@ -127,8 +117,16 @@ CMakeFiles/Tester.dir/cmake_pch.hxx.gch: \
  C:/msys64/ucrt64/include/_timeval.h \
  C:/msys64/ucrt64/include/pthread_time.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/parse_numbers.h \
- C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/error_constants.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/std_mutex.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/sstream \
+ C:/msys64/ucrt64/include/c++/13.2.0/istream \
+ C:/msys64/ucrt64/include/c++/13.2.0/ios \
+ C:/msys64/ucrt64/include/c++/13.2.0/exception \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/exception_ptr.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/cxxabi_init_exception.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/typeinfo \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/nested_exception.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/ios_base.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/ext/atomicity.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/gthr-default.h \
  C:/msys64/ucrt64/include/pthread.h C:/msys64/ucrt64/include/sys/types.h \
@@ -138,17 +136,11 @@ CMakeFiles/Tester.dir/cmake_pch.hxx.gch: \
  C:/msys64/ucrt64/include/pthread_signal.h \
  C:/msys64/ucrt64/include/pthread_compat.h \
  C:/msys64/ucrt64/include/pthread_unistd.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/unique_lock.h \
- C:/msys64/ucrt64/include/c++/13.2.0/ext/atomicity.h \
  C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/atomic_word.h \
- C:/msys64/ucrt64/include/c++/13.2.0/chrono \
- C:/msys64/ucrt64/include/c++/13.2.0/sstream \
- C:/msys64/ucrt64/include/c++/13.2.0/istream \
- C:/msys64/ucrt64/include/c++/13.2.0/ios \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/ios_base.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/locale_classes.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/locale_classes.tcc \
  C:/msys64/ucrt64/include/c++/13.2.0/system_error \
+ C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/error_constants.h \
  C:/msys64/ucrt64/include/c++/13.2.0/stdexcept \
  C:/msys64/ucrt64/include/c++/13.2.0/streambuf \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/streambuf.tcc \
@@ -195,6 +187,8 @@ CMakeFiles/Tester.dir/cmake_pch.hxx.gch: \
  C:/msys64/ucrt64/include/c++/13.2.0/format \
  C:/msys64/ucrt64/include/c++/13.2.0/array \
  C:/msys64/ucrt64/include/c++/13.2.0/charconv \
+ C:/msys64/ucrt64/include/c++/13.2.0/optional \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/enable_special_members.h \
  C:/msys64/ucrt64/include/c++/13.2.0/span \
  C:/msys64/ucrt64/include/c++/13.2.0/variant \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/ranges_algobase.h \
@@ -206,8 +200,7 @@ CMakeFiles/Tester.dir/cmake_pch.hxx.gch: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/node_handle.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/erase_if.h \
  C:/msys64/ucrt64/include/c++/13.2.0/iostream \
- C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/include/constants.hpp \
- C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/source/src_loggers.hpp \
- C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/include/defaultLoggers.hpp \
- C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/include/helpers.hpp \
- C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/source/src_helpers.hpp
+ C:/msys64/ucrt64/include/c++/13.2.0/functional \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/std_function.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/move_only_function.h \
+ C:/msys64/ucrt64/include/c++/13.2.0/bits/mofunc_impl.h

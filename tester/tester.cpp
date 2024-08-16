@@ -1,29 +1,33 @@
-
 #include "better/logger.hpp"
 
-class HazelDebug: public better::Logger{
+class TestLogger: public btr::Logger{
 public:
-    HazelDebug(): Logger("HazelDebug"){}
+    TestLogger(): Logger("Test", false){}
+private:
+    void sendLog(std::string&& p_log)const override{
+        btr::LogStack::get<btr::TerminateFlush>().pushLog(std::forward<std::string>(p_log));
+    }
 };
 
-
+class TestDebugLogger: public btr::Logger{
+public:
+    TestDebugLogger(): Logger("TestDebug"){}
+private:
+    void sendLog(std::string&& p_log)const override{
+        btr::LogStack::get<btr::AutoFlush>().pushLog(std::forward<std::string>(p_log));
+    }
+};
 
 int main(){
+    std::string test = "test log on built in main logger";
 
-    system("cls");
+    btr::Logger::get<btr::Main>().log(test);
+    btr::Logger::get<btr::Debug>().log<btr::Level::ERROR>("test log on built in debug logger");
+    btr::Logger::get<TestDebugLogger>().log<btr::Level::INFO>("test log on custom debug logger", btr::Help::getCurrentTime());
+    btr::Logger::get<TestDebugLogger>().log<btr::Level::TRACE>("test log on custom debug logger", std::source_location::current());
+    btr::Logger::get<TestLogger>().log<btr::Level::WARNING>("test log on custom logger with end flush");
+    btr::Logger::get<TestLogger>().log<btr::Level::ERROR>("test log on custom logger with end flush", std::source_location::current(), btr::Help::getCurrentTime());
+    btr::Logger::get<TestDebugLogger>().log<btr::Level::CRITICAL>("test log on custom debug logger", std::source_location::current());
 
-    better::Logger::get<better::Main>().log("default log from default logger");
-    better::Logger::get<better::Debug>().log("default log from default logger");
-    better::Logger::get<HazelDebug>().log("default log from special logger");
-
-    better::Logger::get<HazelDebug>().log<better::log::Level::INFO>("heres some info for you cuh", better::Help::getCurrentTime());
-    better::Logger::get<HazelDebug>().log<better::log::Level::TRACE>("heres some trace for you cuh", better::Help::getCurrentLocation());
-    better::Logger::get<HazelDebug>().log<better::log::Level::WARN>("hey watch out buddy dont wanna get hurt");
-    better::Logger::get<HazelDebug>().log<better::log::Level::ERR>("oh no you messed up", better::Help::getCurrentLocation(), better::Help::getCurrentTime());
-    better::Logger::get<HazelDebug>().log<better::log::Level::CRIT>("oh no you really messed up fuck tard", better::Help::getCurrentLocation());
-
-    better::LogStack::get().flush();
-
-    system("pause");
-    return 0;
+    return EXIT_SUCCESS;
 }
