@@ -85,8 +85,7 @@ namespace worTech::betterLogger::loggers{
     // #param: T_location&& p_location, source location of the message
     // #param: const time_t& p_time, time of the message
     // #return: const Logger&, reference to current logger instance
-    const Logger& Logger::log(const std::string& p_message, const std::source_location& p_location, 
-    const time_t& p_time)const{
+    const Logger& Logger::log(const std::string& p_message, const std::source_location& p_location, const time_t& p_time)const{
         sendLog(formatLog<Level::NONE>(p_message, p_location, p_time));
         return *this;
     }
@@ -205,18 +204,26 @@ namespace worTech::betterLogger::loggers{
 
 // #div: protected factory methods
 
-    // #
-    template<StringType T_name> Logger::Logger(T_name&& p_name): m_name(std::forward<T_name>(p_name)), m_formatOrder(deflt::FORMAT_ORDER), 
-        m_usesBold(deflt::USES_BOLD){}
-    // #
-    template<StringType T_name> Logger::Logger(T_name&& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder):
-        m_name(std::forward<T_name>(p_name)), m_formatOrder(p_formatOrder), m_usesBold(deflt::USES_BOLD){}
-    // #
-    template<StringType T_name> Logger::Logger(T_name&& p_name, bool p_usesBold): m_name(std::forward<T_name>(p_name)), 
-        m_formatOrder(deflt::FORMAT_ORDER), m_usesBold(p_usesBold){}
-    // #
-    template<StringType T_name> Logger::Logger(T_name&& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder, bool p_usesBold): 
-    m_name(std::forward<T_name>(p_name)), m_formatOrder(p_formatOrder), m_usesBold(p_usesBold){}
+    // #func: 
+    Logger::Logger(const std::string& p_name): m_name(p_name){}
+    // #func:
+    Logger::Logger(const std::string& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder): m_name(p_name), 
+        m_formatOrder(p_formatOrder){}
+    // #func:
+    Logger::Logger(const std::string& p_name, bool p_usesBold): m_name(p_name), m_usesBold(p_usesBold){}
+    // #func:
+    Logger::Logger(const std::string& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder, bool p_usesBold): m_name(p_name),
+    m_formatOrder(p_formatOrder){}
+    // #func:
+    Logger::Logger(std::string&& p_name): m_name(std::forward<std::string>(p_name)){}
+    // #func:
+    Logger::Logger(std::string&& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder): m_name(std::forward<std::string>(p_name)),
+        m_formatOrder(p_formatOrder){}
+    // #func:
+    Logger::Logger(std::string&& p_name, bool p_usesBold): m_name(std::forward<std::string>(p_name)), m_usesBold(p_usesBold){}
+    // #func:
+    Logger::Logger(std::string&& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder, bool p_usesBold): 
+        m_name(std::forward<std::string>(p_name)), m_formatOrder(p_formatOrder), m_usesBold(p_usesBold){}
 
 // #div: protected methods
 

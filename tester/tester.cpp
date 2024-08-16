@@ -11,7 +11,8 @@ private:
 
 class TestDebugLogger: public btr::Logger{
 public:
-    TestDebugLogger(): Logger("TestDebug"){}
+    TestDebugLogger(): Logger("TestDebug", {btr::Format::TIME, btr::Format::LOGGER, btr::Format::LEVEL, btr::Format::MESSAGE, 
+        btr::Format::LOCATION}){}
 private:
     void sendLog(std::string&& p_log)const override{
         btr::LogStack::get<btr::AutoFlush>().pushLog(std::forward<std::string>(p_log));

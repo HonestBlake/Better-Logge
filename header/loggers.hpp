@@ -56,10 +56,14 @@ namespace worTech::betterLogger::loggers{
         template<Level t_logLevel> const Logger& log(std::string&& p_message, const std::source_location& p_location, const time_t& p_time)const;
     protected:
     // #div: protected factory methods
-        template<StringType T_name> Logger(T_name&& p_name);
-        template<StringType T_name> Logger(T_name&& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder);
-        template<StringType T_name> Logger(T_name&& p_name, bool p_usesBold);
-        template<StringType T_name> Logger(T_name&& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder, bool p_usesBold);
+        Logger(const std::string& p_name);
+        Logger(const std::string& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder);
+        Logger(const std::string& p_name, bool p_usesBold);
+        Logger(const std::string& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder, bool p_usesBold);
+        Logger(std::string&& p_name);
+        Logger(std::string&& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder);
+        Logger(std::string&& p_name, bool p_usesBold);
+        Logger(std::string&& p_name, const std::array<Format, log::FORMAT_SIZE>& p_formatOrder, bool p_usesBold);
         Logger(const Logger&) = delete;
         Logger(Logger&&) = delete;
     // #div: protected operators
@@ -67,8 +71,8 @@ namespace worTech::betterLogger::loggers{
         Logger& operator=(Logger&&) = delete;
     // #div: protected members
         std::string m_name;
-        std::array<Format, log::FORMAT_SIZE> m_formatOrder;
-        bool m_usesBold;
+        std::array<Format, log::FORMAT_SIZE> m_formatOrder = deflt::FORMAT_ORDER;
+        bool m_usesBold = deflt::USES_BOLD;
     // #div: protected methods
         virtual void sendLog(std::string&& p_log)const;
         virtual std::string formatLogger(const Level p_logLevel)const;

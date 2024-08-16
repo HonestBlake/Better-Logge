@@ -13,7 +13,7 @@ namespace worTech::betterLogger::defaultLogStacks{
     // #class: DefaultTerminateFlush, singleton class
     class TerminateFlush: public LogStack{
     private:
-        void autoFlush() override;
+        void autoFlush()override;
     };
 
 }
