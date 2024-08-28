@@ -12,7 +12,6 @@ add_library(BetterLogger INTERFACE)
 set_target_properties(BetterLogger PROPERTIES INTERFACE_INCLUDE_DIRECTORIES ${INCLUDE})
 target_include_directories(BetterLogger INTERFACE ${ROOT_DIR})
 target_precompile_headers(BetterLogger INTERFACE ${ROOT_DIR}/header/includes.hpp)
-
 # set tester
 add_executable(Tester ${ROOT_DIR}/tester/tester.cpp)
 target_link_libraries(Tester PRIVATE BetterLogger)

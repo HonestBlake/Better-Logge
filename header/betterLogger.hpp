@@ -29,8 +29,9 @@ inline namespace worTech{
         // #info: holds log stacks
         // #scope: betterLogger, project namespace
         inline namespace logStacks{
+            namespace defaultFormats{} namespace deflt = defaultFormats;
             class LogStack;
-        }
+        } namespace stacks = logStacks;
         // #
         inline namespace formats{
             namespace ansiiColorCodes{} namespace ansii = ansiiColorCodes;
@@ -44,11 +45,12 @@ inline namespace worTech{
         inline namespace loggers{
             namespace defaultFormats{} namespace deflt = defaultFormats;
             class Logger;
-        }
+        } namespace logs = loggers;
         // #namespace: defaultLogStacks, component namespace
         //#info: holds built in log stacks
         // #scope: betterLogger, project namespace
         inline namespace defaultLogStacks{
+            namespace loggerValues{} namespace logger = loggerValues;
             class AutoFlush;
             class TerminateFlush;
         }

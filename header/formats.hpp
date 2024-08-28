@@ -1,14 +1,17 @@
 #pragma once
 
-// #
+// #file: formats.hpp, header file
+// #info: defines variable constants for log formatting
+// #needs: betterLogger.hpp, internal dependency
 
+// project include
 #include "betterLogger.hpp"
 
 namespace worTech::betterLogger::formats{
 
     // #namespace: ansiiColorCodes(ansii), variable namespace
-    // #info: holds ansii color codes for different char colors
     // #scope: loggers, component namespace
+    // #info: holds ansii color codes for different char colors
     namespace ansiiColorCodes{
         const std::string RESET = "\033[0m";
         const std::string BLACK = "\033[30m";
@@ -29,8 +32,8 @@ namespace worTech::betterLogger::formats{
         const std::string BOLD_WHITE = "\033[1;37m";
     }
     // #enum: LogLevel(Level), uint8_t enum class
-    // #info: holds enumerated log levels
     // #scope: loggers, component namespace
+    // #info: holds enumerated log levels
     enum class LogLevel: uint8_t{
         NONE,
         INFO,
@@ -38,8 +41,10 @@ namespace worTech::betterLogger::formats{
         WARNING,
         ERROR,
         CRITICAL
-    };
+    }; 
     // #enum: FormatType(Format), uint8_t enum class
+    // #scope: loggers, component namespace
+    // #info: holds enumerated log formatting types
     enum class FormatType: uint8_t{
         LOGGER,
         LEVEL,
@@ -48,8 +53,8 @@ namespace worTech::betterLogger::formats{
         LOCATION
     };
     // #namespace: logFormatting(log), variable namespace
-    // #info: holds log formatting values and maps
     // #scope: loggers, component namespace
+    // #info: holds log formatting values and maps
     namespace logFormatting{
         const std::string LOGGER_BEGIN = "[";
         const std::string LOGGER_END = "]";
@@ -60,9 +65,6 @@ namespace worTech::betterLogger::formats{
         const std::string LINE_BEGIN = "line";
         const std::string SPACE = " ";
         const size_t FORMAT_SIZE = 5;
-        // #map: LEVEL_NAME, unordered map
-        // #info: maps log levels to their names
-        // #scope: loggers, component namespace
         const std::unordered_map<Level, std::string> LEVEL_NAME = {
             {Level::NONE, ""},
             {Level::INFO, "Info"},
@@ -71,9 +73,6 @@ namespace worTech::betterLogger::formats{
             {Level::ERROR, "Error"},
             {Level::CRITICAL, "Critical"}
         };
-        // #map: LEVEL_COLOR, unordered map
-        // #info: maps log levels to their colors
-        // #scope: loggers, component namespace
         const std::unordered_map<Level, std::string> LEVEL_COLOR = {
             {Level::NONE, ansii::WHITE},
             {Level::INFO, ansii::CYAN},
@@ -82,9 +81,6 @@ namespace worTech::betterLogger::formats{
             {Level::ERROR, ansii::RED},
             {Level::CRITICAL, ansii::MAGENTA}
         };
-        // #map: LEVEL_COLOR_BOLD, unordered map
-        // #info: maps log levels to their bold colors
-        // #scope: loggers, component namespace
         const std::unordered_map<Level, std::string> LEVEL_COLOR_BOLD = {
             {Level::NONE, ansii::BOLD_WHITE},
             {Level::INFO, ansii::BOLD_CYAN},
@@ -95,4 +91,4 @@ namespace worTech::betterLogger::formats{
         };
     }
     
-}
+} // namespace worTech::betterLogger::formats

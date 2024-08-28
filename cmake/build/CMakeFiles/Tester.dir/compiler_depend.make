@@ -3,7 +3,6 @@
 
 CMakeFiles/Tester.dir/C_/Users/blake/Desktop/C++_Projects/Better_Logger/tester/tester.cpp.obj: CMakeFiles/Tester.dir/cmake_pch.hxx \
   C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/betterLogger.hpp \
-  C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/concepts.hpp \
   C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/defaultLogStacks.hpp \
   C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/defaultLoggers.hpp \
   C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/formats.hpp \
@@ -72,9 +71,7 @@ CMakeFiles/Tester.dir/cmake_pch.hxx.gch: CMakeFiles/Tester.dir/cmake_pch.hxx \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/max_size_type.h \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/memory_resource.h \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/memoryfwd.h \
-  C:/msys64/ucrt64/include/c++/13.2.0/bits/mofunc_impl.h \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/move.h \
-  C:/msys64/ucrt64/include/c++/13.2.0/bits/move_only_function.h \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/nested_exception.h \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/new_allocator.h \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/node_handle.h \
@@ -96,7 +93,6 @@ CMakeFiles/Tester.dir/cmake_pch.hxx.gch: CMakeFiles/Tester.dir/cmake_pch.hxx \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/shared_ptr_base.h \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/sstream.tcc \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/std_abs.h \
-  C:/msys64/ucrt64/include/c++/13.2.0/bits/std_function.h \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_algo.h \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_algobase.h \
   C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_bvector.h \
@@ -146,7 +142,6 @@ CMakeFiles/Tester.dir/cmake_pch.hxx.gch: CMakeFiles/Tester.dir/cmake_pch.hxx \
   C:/msys64/ucrt64/include/c++/13.2.0/ext/string_conversions.h \
   C:/msys64/ucrt64/include/c++/13.2.0/ext/type_traits.h \
   C:/msys64/ucrt64/include/c++/13.2.0/format \
-  C:/msys64/ucrt64/include/c++/13.2.0/functional \
   C:/msys64/ucrt64/include/c++/13.2.0/initializer_list \
   C:/msys64/ucrt64/include/c++/13.2.0/iomanip \
   C:/msys64/ucrt64/include/c++/13.2.0/ios \
@@ -244,12 +239,6 @@ C:/msys64/ucrt64/include/c++/13.2.0/backward/binders.h:
 
 C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/betterLogger.hpp:
 
-C:/msys64/ucrt64/include/c++/13.2.0/bits/locale_facets_nonio.h:
-
-C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/concepts.hpp:
-
-C:/msys64/ucrt64/include/c++/13.2.0/bits/concept_check.h:
-
 C:/msys64/ucrt64/include/c++/13.2.0/ext/atomicity.h:
 
 C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/formats.hpp:
@@ -268,11 +257,11 @@ C:/msys64/ucrt64/include/c++/13.2.0/bits/hash_bytes.h:
 
 C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/defaultLoggers.hpp:
 
+C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/loggers.hpp:
+
 C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/helpers.hpp:
 
 C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/logStacks.hpp:
-
-C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/header/loggers.hpp:
 
 C:/msys64/ucrt64/include/c++/13.2.0/bits/hashtable.h:
 
@@ -291,6 +280,8 @@ C:/msys64/ucrt64/include/c++/13.2.0/bits/exception_ptr.h:
 C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/source/defaultLoggers.hpp:
 
 C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/source/helpers.hpp:
+
+C:/msys64/ucrt64/include/c++/13.2.0/bits/locale_facets_nonio.tcc:
 
 C:/Users/blake/Desktop/C++\ Projects/Better\ Logger/source/logStacks.hpp:
 
@@ -348,6 +339,10 @@ C:/msys64/ucrt64/include/c++/13.2.0/bits/chrono_io.h:
 
 C:/msys64/ucrt64/include/c++/13.2.0/bits/codecvt.h:
 
+C:/msys64/ucrt64/include/c++/13.2.0/bits/locale_facets_nonio.h:
+
+C:/msys64/ucrt64/include/c++/13.2.0/bits/concept_check.h:
+
 C:/msys64/ucrt64/include/c++/13.2.0/bits/requires_hosted.h:
 
 C:/msys64/ucrt64/include/c++/13.2.0/bits/functional_hash.h:
@@ -392,8 +387,6 @@ C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_algo.h:
 
 C:/msys64/ucrt64/include/c++/13.2.0/bits/locale_facets.tcc:
 
-C:/msys64/ucrt64/include/c++/13.2.0/bits/locale_facets_nonio.tcc:
-
 C:/msys64/ucrt64/include/c++/13.2.0/cctype:
 
 C:/msys64/ucrt64/include/c++/13.2.0/bits/localefwd.h:
@@ -406,15 +399,9 @@ C:/msys64/ucrt64/include/c++/13.2.0/bits/memory_resource.h:
 
 C:/msys64/ucrt64/include/c++/13.2.0/bits/memoryfwd.h:
 
-C:/msys64/ucrt64/include/c++/13.2.0/iostream:
-
-C:/msys64/ucrt64/include/c++/13.2.0/bits/mofunc_impl.h:
-
 C:/msys64/ucrt64/include/c++/13.2.0/tuple:
 
 C:/msys64/ucrt64/include/c++/13.2.0/bits/move.h:
-
-C:/msys64/ucrt64/include/c++/13.2.0/bits/move_only_function.h:
 
 C:/msys64/ucrt64/include/c++/13.2.0/x86_64-w64-mingw32/bits/error_constants.h:
 
@@ -457,8 +444,6 @@ C:/msys64/ucrt64/include/c++/13.2.0/bits/sstream.tcc:
 C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_function.h:
 
 C:/msys64/ucrt64/include/c++/13.2.0/bits/std_abs.h:
-
-C:/msys64/ucrt64/include/c++/13.2.0/bits/std_function.h:
 
 C:/msys64/ucrt64/include/c++/13.2.0/bits/stl_bvector.h:
 
@@ -552,8 +537,6 @@ C:/msys64/ucrt64/include/c++/13.2.0/ext/type_traits.h:
 
 C:/msys64/ucrt64/include/c++/13.2.0/format:
 
-C:/msys64/ucrt64/include/c++/13.2.0/functional:
-
 C:/msys64/ucrt64/include/c++/13.2.0/initializer_list:
 
 C:/msys64/ucrt64/include/corecrt.h:
@@ -565,6 +548,8 @@ C:/msys64/ucrt64/lib/gcc/x86_64-w64-mingw32/13.2.0/include/syslimits.h:
 C:/msys64/ucrt64/include/c++/13.2.0/ios:
 
 C:/msys64/ucrt64/include/c++/13.2.0/iosfwd:
+
+C:/msys64/ucrt64/include/c++/13.2.0/iostream:
 
 C:/msys64/ucrt64/include/c++/13.2.0/istream:
 

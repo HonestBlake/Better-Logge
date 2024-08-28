@@ -199,8 +199,4 @@ CMakeFiles/Tester.dir/cmake_pch.hxx.gch: \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/hashtable_policy.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/node_handle.h \
  C:/msys64/ucrt64/include/c++/13.2.0/bits/erase_if.h \
- C:/msys64/ucrt64/include/c++/13.2.0/iostream \
- C:/msys64/ucrt64/include/c++/13.2.0/functional \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/std_function.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/move_only_function.h \
- C:/msys64/ucrt64/include/c++/13.2.0/bits/mofunc_impl.h
+ C:/msys64/ucrt64/include/c++/13.2.0/iostream

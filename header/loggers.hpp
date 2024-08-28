@@ -2,21 +2,23 @@
 
 // #file: logger.hpp, header file
 // #info: holds class definition and its method declorations for the logger class and its related variables and enums'
-// #includes: betterLogger.hpp, project includes
-// #includes: defaultLogStacks.hpp, project includes
+// #needs: betterLogger.hpp, internal dependency
+// #needs: defaultLogStacks.hpp, internal includes
 
 // project header
 #include "betterLogger.hpp"
 // built-in log stacks
 #include "defaultLogStacks.hpp"
-// project concept types
-#include "concepts.hpp"
 // logger format constants
 #include "formats.hpp"
 
 namespace worTech::betterLogger::loggers{
     
     // #namespace: defaultFormats(deflt), variable namespace
+    // #scope: loggers, component namespace
+    // #info: holds default values for loggers
+    // #uses: FormatType, enum class
+    // #uses: logFormatting, variable namespace
     namespace defaultFormats{
         const std::array<Format, log::FORMAT_SIZE> FORMAT_ORDER = {
             Format::LOGGER,
@@ -30,6 +32,7 @@ namespace worTech::betterLogger::loggers{
     // #class: Logger, abstract singleton class 
     // #info: interface singleton class for loggers
     // #scope: loggers, component namespace
+    // #uses: LogLevel, enum class
     class Logger{
     public:
     // #div: public factory methods
@@ -74,7 +77,7 @@ namespace worTech::betterLogger::loggers{
         std::array<Format, log::FORMAT_SIZE> m_formatOrder = deflt::FORMAT_ORDER;
         bool m_usesBold = deflt::USES_BOLD;
     // #div: protected methods
-        virtual void sendLog(std::string&& p_log)const;
+        virtual const Logger& sendLog(std::string&& p_log)const;
         virtual std::string formatLogger(const Level p_logLevel)const;
         virtual std::string formatLevel(const Level p_logLevel)const;
         virtual std::string formatTime(const Level p_logLevel, const time_t& p_time)const;
@@ -84,8 +87,10 @@ namespace worTech::betterLogger::loggers{
         virtual std::string getLogColor(const Level p_logLevel)const;
         virtual std::string getLogColorBold(const Level p_logLevel)const;
         virtual std::string getLogLevelName(const Level p_logLevel)const;
-        template<Level t_logLevel, StringType T_message> std::string formatLog(T_message&& p_message,
-            const std::optional<std::source_location> p_location, const std::optional<time_t> p_time)const;
-    };
+        template<Level t_logLevel> std::string formatLog(const std::string& p_message, const std::optional<std::source_location> p_location, 
+            const std::optional<time_t> p_time)const;
+        template<Level t_logLevel> std::string formatLog(std::string&& p_message, const std::optional<std::source_location> p_location, 
+            const std::optional<time_t> p_time)const;
+    }; 
     
 }

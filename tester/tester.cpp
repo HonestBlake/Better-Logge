@@ -4,8 +4,9 @@ class TestLogger: public btr::Logger{
 public:
     TestLogger(): Logger("Test", false){}
 private:
-    void sendLog(std::string&& p_log)const override{
+    const Logger& sendLog(std::string&& p_log)const override{
         btr::LogStack::get<btr::TerminateFlush>().pushLog(std::forward<std::string>(p_log));
+        return *this;
     }
 };
 
@@ -14,8 +15,9 @@ public:
     TestDebugLogger(): Logger("TestDebug", {btr::Format::TIME, btr::Format::LOGGER, btr::Format::LEVEL, btr::Format::MESSAGE, 
         btr::Format::LOCATION}){}
 private:
-    void sendLog(std::string&& p_log)const override{
+    const Logger& sendLog(std::string&& p_log)const override{
         btr::LogStack::get<btr::AutoFlush>().pushLog(std::forward<std::string>(p_log));
+        return *this;
     }
 };
 

@@ -6,7 +6,6 @@ CMakeFiles/Tester.dir/C_/Users/blake/Desktop/C++_Projects/Better_Logger/tester/t
  C:/Users/blake/Desktop/C__PRO~1/BETTER~4/cmake/../source/logStacks.hpp \
  C:/Users/blake/Desktop/C__PRO~1/BETTER~4/cmake/../header/loggers.hpp \
  C:/Users/blake/Desktop/C__PRO~1/BETTER~4/cmake/../header/defaultLogStacks.hpp \
- C:/Users/blake/Desktop/C__PRO~1/BETTER~4/cmake/../header/concepts.hpp \
  C:/Users/blake/Desktop/C__PRO~1/BETTER~4/cmake/../header/formats.hpp \
  C:/Users/blake/Desktop/C__PRO~1/BETTER~4/cmake/../source/loggers.hpp \
  C:/Users/blake/Desktop/C__PRO~1/BETTER~4/cmake/../header/helpers.hpp \
