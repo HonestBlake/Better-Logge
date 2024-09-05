@@ -2,7 +2,7 @@
 
 // #file: logStack.hpp, header file
 // #info: holds definition for LogStack class
-// #needs: betterLogger.hpp, internal dependency
+// #attach: betterLogger.hpp, internal dependency
 
 // project header
 #include "betterLogger.hpp"

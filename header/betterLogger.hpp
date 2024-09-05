@@ -2,7 +2,7 @@
 
 // #file: betterLogger.hpp, header file
 // #info: defines outline for project namespaces and class declorations
-// #includes: includes.hpp, project includes
+// #attach: includes.hpp, project includes
 
 // project wide includes
 #include "includes.hpp"
@@ -15,10 +15,6 @@ inline namespace worTech{
     // #info: holds all comonents of betterLogger project
     // #scope: worTech, developer namespace
     namespace betterLogger{
-        // #namespace: concepts, component namespace
-        // #info: holds concepts for betterLogger project
-        // #scope: betterLogger, project namespace
-        inline namespace concepts{}
         // #namespace: helpers, component namespace
         // #info: holds helper classes
         // #scope: betterLogger, project namespace
@@ -26,13 +22,15 @@ inline namespace worTech{
             class Helper; using Help = Helper;
         }
         // #namespace: logStacks, component namespace
-        // #info: holds log stacks
+        // #info: holds log stack class and related namespace
         // #scope: betterLogger, project namespace
         inline namespace logStacks{
             namespace defaultFormats{} namespace deflt = defaultFormats;
             class LogStack;
         } namespace stacks = logStacks;
-        // #
+        // #namespace: formats, component namespace
+        // #info: holds log formatting enums and related namespaces
+        // #scope: betterLogger, project namespace
         inline namespace formats{
             namespace ansiiColorCodes{} namespace ansii = ansiiColorCodes;
             enum class LogLevel: uint8_t; using Level = LogLevel;
@@ -40,7 +38,7 @@ inline namespace worTech{
             namespace logFormatting{} namespace log = logFormatting;
         }
         // #namespace: loggers, component namespace
-        // #info: holds loggers and related implementation tools
+        // #info: holds logger class and related namespace
         // #scope: betterLogger, project namespace
         inline namespace loggers{
             namespace defaultFormats{} namespace deflt = defaultFormats;
@@ -55,7 +53,7 @@ inline namespace worTech{
             class TerminateFlush;
         }
         // #namespace: defaultLoggers, component namespace
-        // #info: holds built in loggers and related tools
+        // #info: holds built in loggers and related namespace
         // #scope: betterLogger, project namespace
         inline namespace defaultLoggers{
             namespace loggerValues{} namespace logger = loggerValues;

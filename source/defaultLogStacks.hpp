@@ -2,7 +2,7 @@
 
 // #file: defaultLogStacks.hpp, source file
 // #info: defines methods for built in log stacks
-// #needs: defaultLogStacks.hpp, internal dependency
+// #attach: defaultLogStacks.hpp, internal dependency
 
 // decloration header
 #include "header/defaultLogStacks.hpp"

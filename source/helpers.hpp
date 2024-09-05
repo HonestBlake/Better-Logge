@@ -2,7 +2,7 @@
 
 // #file: source/helpers.hpp, source file
 // #info: defines functions of Helper class
-// #needs: header/helpers.hpp, internal dependency
+// #attach: header/helpers.hpp, internal dependency
 
 // header file
 #include "header/helpers.hpp"

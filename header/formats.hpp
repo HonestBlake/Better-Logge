@@ -2,7 +2,7 @@
 
 // #file: formats.hpp, header file
 // #info: defines variable constants for log formatting
-// #needs: betterLogger.hpp, internal dependency
+// #attach: betterLogger.hpp, internal dependency
 
 // project include
 #include "betterLogger.hpp"

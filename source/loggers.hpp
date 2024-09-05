@@ -2,7 +2,7 @@
 
 // #file: source/loggers.hpp, source file
 // #info: holds function definitions for the Logger class
-// #needs: header/loggers.hpp, internal dependency
+// #attach: header/loggers.hpp, internal dependency
 
 // decloration header
 #include "header/loggers.hpp"

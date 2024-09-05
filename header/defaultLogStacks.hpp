@@ -2,8 +2,8 @@
 
 // #file: defaultLogStacks.hpp, header file
 // #info: defines built in log stacks
-// #needs: betterLogger.hpp, internal dependency
-// #needs: logStacks.hpp, internal dependency
+// #attach: betterLogger.hpp, internal dependency
+// #attach: logStacks.hpp, internal dependency
 
 // project header
 #include "betterLogger.hpp"

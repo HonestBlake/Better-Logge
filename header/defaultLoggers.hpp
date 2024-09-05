@@ -2,8 +2,8 @@
 
 // #file: defaultLoggers.hpp, header file
 // #info: holds class definitions for built in loggers
-// #needs: betterLogger.hpp, internal dependency
-// #needs: loggers.hpp, internal dependency
+// #attach: betterLogger.hpp, internal dependency
+// #attach: loggers.hpp, internal dependency
 
 // project header
 #include "betterLogger.hpp"

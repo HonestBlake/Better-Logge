@@ -2,7 +2,7 @@
 
 // #file: header/helpers.hpp, header file
 // #info: defines Helper class
-// #needs: betterLogger.hpp, internal dependency
+// #attach: betterLogger.hpp, internal dependency
 
 // project include
 #include "betterLogger.hpp"

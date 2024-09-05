@@ -2,8 +2,8 @@
 
 // #file: logger.hpp, header file
 // #info: holds class definition and its method declorations for the logger class and its related variables and enums'
-// #needs: betterLogger.hpp, internal dependency
-// #needs: defaultLogStacks.hpp, internal includes
+// #attach: betterLogger.hpp, internal dependency
+// #attach: defaultLogStacks.hpp, internal includes
 
 // project header
 #include "betterLogger.hpp"

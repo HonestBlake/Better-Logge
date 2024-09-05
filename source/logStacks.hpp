@@ -2,7 +2,7 @@
 
 // #file: logStack.hpp, source file
 // #info: holds function definitions 
-// #needs: header/logStacks.hpp, internal dependency
+// #attach: header/logStacks.hpp, internal dependency
 
 // decloration header
 #include "header/logStacks.hpp"
